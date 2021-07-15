@@ -12,7 +12,7 @@ import org.springframework.context.annotation.Scope;
 @Configuration
 public class SpringConfig {
     @Bean
-    @Scope("prototype")
+    @Scope("singleton")
     public SpringTest springTest() {
         return new SpringTest();
     }
